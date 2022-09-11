@@ -3,4 +3,4 @@ const text = document.querySelector("#text");
 const handleInput = (e) => {
  text.style.fontSize = `${e.target.value}px`;
 };
-input.addEventListener("change", handleInput);
+input.addEventListener("input", handleInput);

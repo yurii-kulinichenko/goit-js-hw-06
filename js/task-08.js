@@ -10,8 +10,12 @@ const handleSubmit = (e) => {
   if (email.value === "" || password.value === "") {
     return alert("Please fill in all the fields!");
   }
+  const userData = {
+    login: `${email.value}`,
+    password: `${password.value}`,
+  };
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  console.log(userData);
   e.currentTarget.reset();
 };
 form.addEventListener("submit", handleSubmit);
